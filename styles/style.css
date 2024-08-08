@@ -36,3 +36,257 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: grid;
+  grid-template-columns: 711px auto ;
+  gap: 30px;
+  margin-top: 133px;
+}
+
+.result {
+  width: 100%;
+  min-height: 456px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 78px;
+}
+
+video {
+  width: 100%;
+  object-fit: fill;
+}
+
+.result__video {
+  flex-grow: 1;  
+  height: 386px;
+}
+
+.result__video-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 386px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: scroll;
+  max-width: 400px;
+  max-height: 298px;
+  margin-top: 26px;
+  gap: 30px;
+}
+
+.content__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.content__video-card:active{
+  background-color: rgba(84, 80, 80, 1);
+  border: none;
+}
+
+.content__video-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+
+.content__video-card-thumbnail{
+  height: 100px;
+  width: 194px;
+}
+
+.title {
+  font-family: Oswald;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: rgba(84, 80, 80, 1); 
+}
+
+.search-form__fieldset-title {
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.search-form__checkbox-list {
+  color: rgba(255, 255, 255, 0.7);
+  display: inline-flex;
+  gap: 15px;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;  
+}
+
+
+button:focus-visible{
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.content__video-card {
+  color: rgba(255, 255, 255, 1);
+}
+
+.content__card-link{
+  text-decoration: none;
+}
+
+.content__video-card-description-container:hover{
+  text-decoration: underline;
+}
+
+.content__video-card-title{
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+
+.content__card-link{
+  margin-top: 6px;;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+  text-align: left;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+fieldset {
+  border: none;
+}
+
+.search-form__label {
+  width: fit-content;
+  cursor: pointer;
+}
+
+
+.search-form__label-text{
+  appearance: none;
+  color: #fff;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.search-form__textfield{
+  color: inherit;
+}
+
+.search-form__pseudo-checkbox {
+  margin-top: 5px;
+  width: 19px;
+  height: 19px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #fff;
+}
+
+input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
+  width: 15px;
+  height: 15px;
+  content: '';
+  margin: 0 auto;
+  background: #fff;
+}
+
+input[type=checkbox] + .search-form__label{
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.search-form__label:focus-visible{
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+input[type=text] {
+  margin-top: 5px;
+  cursor: text;
+  height: 27px;
+  width: 225px;
+  content: '';
+  border: 1px 0px;
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  border-color: #fff;
+}
+
+input[type=text]:focus-visible{
+  outline-offset: 2px;
+  outline: 1px solid white;
+}
+
+.button {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  gap: 10px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: center;
+}
+
+button:active{
+  background-color: rgba(84, 80, 80, 1);
+  border: 1px solid #fff;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  margin-top: 20px;
+}
+
+.more-button {
+  width: 399px;
+  min-height: 33px;
+  margin-bottom: 1px;
+}
